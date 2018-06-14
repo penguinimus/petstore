@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
-import './Home.css';
+import { connect } from 'react-redux';
 
-export default class Home extends Component {
+import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap';
+import '../../assets/css/Home.css';
+
+class Home extends Component {
     render() {
+        console.log(this.props.item);
         return (
-            <Grid fluid="true">
+            <Grid fluid={true}>
                 <Jumbotron>
                     <h2>Only the Best Pet Food!</h2>
                     <p>Find the best food at the best prices</p>
@@ -52,3 +55,11 @@ export default class Home extends Component {
         );
     }
 }
+
+function mapStatetoProps(state) {
+    return {
+        item: state.item
+    };
+}
+
+export default connect(mapStatetoProps)(Home);
