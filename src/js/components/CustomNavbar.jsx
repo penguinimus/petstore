@@ -9,7 +9,7 @@ export default class CustomNavbar extends Component {
             <Navbar default collapseOnSelect staticTop>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">OTB!</Link>
+                        <Link to="/">Only the Best!</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

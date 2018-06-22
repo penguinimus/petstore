@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col, Image, Jumbotron, Button } from 'react-bootstrap';
 import '../../css/News.css';
 
 export default class News extends Component {
     render() {
         return (
-            <div>
-                <Image src="assets/sadcat.jpg" className="header-image" />
                 <Grid>
-                    <h2>News</h2>
+                    <Jumbotron>
+                      <h1>News Page</h1>
+                      <p>
+                        This is a simple hero unit, a simple jumbotron-style component for calling
+                        extra attention to featured content or information.
+                      </p>
+                      <p>
+                        <Button bsStyle="primary">Learn more</Button>
+                      </p>
+                    </Jumbotron>
                     <Row>
                         <Col xs={12} sm={8} className="main-section">
                             <p>All you need to paint is a few tools, a little instruction, and a vision in your mind. The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. Let's make some happy little clouds in our world. I can't think of anything more rewarding than being able to express yourself to others through painting. There isn't a rule. You just practice and find out which way works best for you.</p>
@@ -23,7 +30,6 @@ export default class News extends Component {
                         </Col>
                     </Row>
                 </Grid>
-            </div>
         );
     }
 }

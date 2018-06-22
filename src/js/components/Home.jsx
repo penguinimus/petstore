@@ -1,70 +1,62 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Grid, Row, Col, Image, Button, Carousel } from 'react-bootstrap';
+import { Grid, Row, Col, Image, Button, Jumbotron, Carousel } from 'react-bootstrap';
 import '../../css/Home.css';
 
 class Home extends Component {
     render() {
-        console.log(this.props.item);
         return (
-            <div>
                 <Grid fluid>
-                    <Row className="show-grid text-center no-border">
-                        <Col xs={12} className="feature-panel">
-                            <div class="text-container">
-                                <h1>Only the Best Pet Food!</h1>
-                                <h2>Find the best food at the best prices</h2>
-                                <p>You can't have light without dark. You can't know happiness unless you've known sorrow. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. Automatically, all of these beautiful, beautiful things will happen. Trees live in your fan brush, but you have to scare them out.</p>                                
-                                <Link to="/about">
-                                    <Button bsStyle="btn secondary">Find Food</Button>
-                                </Link>
+                    <Row className="text-left">
+                            <Carousel controls={false} className="hidden-xs">
+                                <Carousel.Item className="banner">
+                                        <Carousel.Caption className="caption-text">
+                                            <h1>Only the Best</h1>
+                                            <h1>Pet Supplies</h1>
+                                            <h2>Find the best supplies at the best prices</h2>
+                                            <p>You can't have light without dark. You can't know happiness unless you've known sorrow. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. Automatically, all of these beautiful, beautiful things will happen. Trees live in your fan brush, but you have to scare them out.</p>                                
+                                            <Link to="/about">
+                                                <Button bsStyle="info">Find Food</Button>
+                                            </Link>
+                                        </Carousel.Caption>
+                                    <Image alt="Corgi" src='./assets/BannerCorgi.jpg' className="banner-img" responsive />
+                                </Carousel.Item>
+                                <Carousel.Item className="banner">
+                                        <Carousel.Caption className="caption-text">
+                                            <h3>Introducing Monty</h3>
+                                            <p>Monty is your personal feline assistant, here to help you shop!</p>
+                                        </Carousel.Caption>
+                                    <Image alt="Monty" src='./assets/BannerCatMonty.jpg' className="banner-img"  responsive />
+                                </Carousel.Item>
+                            </Carousel>
+                            <div className="hidden-sm hidden-md hidden-lg">
+                                <Image alt="BannerSmallScreen" src="./assets/BannerWomanKittenXS.jpg" responsive />
+                                <Jumbotron>
+                                    <h1>Only the Best</h1>
+                                    <h1>Pet Supplies</h1>
+                                    <h2>Find the best supplies at the best prices</h2>
+                                    <p>You can't have light without dark. You can't know happiness unless you've known sorrow. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. Automatically, all of these beautiful, beautiful things will happen. Trees live in your fan brush, but you have to scare them out.</p>                                
+                                    <Link to="/about">
+                                        <Button bsStyle="info">Find Food</Button>
+                                    </Link>
+                                </Jumbotron>
                             </div>
-                        </Col>
                     </Row>
-                    <Row className="show-grid text-center">
-                        <Col xs={12} md={8} className="panel-left carousel-image">
-                            <Carousel controls={false} indicators={false}>
-                                <Carousel.Item>
-                                    <Image alt="PlaceholderLeft" src='./assets/blank450.png' />
-                                    <Carousel.Caption className="caption">
-                                        <h3>Nutrition</h3>
-                                        <p>Find out how healthy these treats are.</p>
-                                        <p><Link to={'/'}>Find out more about cat calories</Link></p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <Image alt="PlaceholderLeft" src='./assets/blank450.png' />
-                                    <Carousel.Caption className="caption">
-                                        <h3>Pet-ercise</h3>
-                                        <p>Tips on walking your pet to make sure your furry friend doesn't get too fat.</p>
-                                        <p><Link to={'/'}>Learn some pet workout tips</Link></p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <Image alt="PlaceholderLeft" src='./assets/blank450.png' />
-                                    <Carousel.Caption className="caption">
-                                		<h3>Accessories</h3>
-                                		<p>Walking your cat can be a drag.  Fortunately, we have some of the best pet harnesses to keep you and your four-legged pal happy and active.</p>
-                                		<p><Link to={'/'}>Shop our selection of outdoor cat equipment</Link></p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                            </Carousel>
-                        </Col>
-                        <Col xs={12} md={4} className="panel-right">
-                            <Carousel controls={false} indicators={false}>
-                                <Carousel.Item className="carousel">
-                                    <Image alt="PlaceholderRight" src="./assets/blank450.png" className="panel-right-image" />
-                                    <Carousel.Caption className="caption">
-                                        <h3>Introducing Monty</h3>
-                                        <p>Monty is your personal feline assistant, here to help you shop!</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                            </Carousel>
+                    <Row>
+                        <Col xs={12} sm={8} smOffset={2}>
+                            <h3>Yum food</h3>
+                            <p>We have no limits to our world. We're only limited by our imagination. Everybody needs a friend. Here's something that's fun. You have to make those little noises or it won't work. This is the way you take out your flustrations. If you overwork it you become a cloud killer. There's nothing worse than a cloud killer.</p>
+                            <p>This is probably the greatest thing to happen in my life - to be able to share this with you. Don't forget to tell these special people in your life just how special they are to you. Put your feelings into it, your heart, it's your world. Learn when to stop. Now we can begin working on lots of happy little things.</p>
+                            <p>It's important to me that you're happy. With something so strong, a little bit can go a long way. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown.</p>
+                            <p>But they're very easily killed. Clouds are delicate. That's what painting is all about. It should make you feel good when you paint. You're the greatest thing that has ever been or ever will be. You're special. You're so very special. Tree trunks grow however makes them happy.</p>
+                            <p>We wash our brush with odorless thinner. I'm gonna start with a little Alizarin crimson and a touch of Prussian blue Be so very light. Be a gentle whisper.</p>
+                            <p>Just go out and talk to a tree. Make friends with it. You don't want to kill all your dark areas they are very important. Remember how free clouds are. They just lay around in the sky all day long.</p>
+                            <p>Get away from those little Christmas tree things we used to make in school. I think there's an artist hidden in the bottom of every single one of us. But we're not there yet, so we don't need to worry about it.</p>
+                            <Image src="assets/food2.jpg" className="about-profile-pic" rounded responsive />
                         </Col>
                     </Row>
                 </Grid>
-            </div>
         );
     }
 }

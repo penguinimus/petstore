@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Grid, Col, Image } from 'react-bootstrap';
+import { Row, Grid, Col, Jumbotron, Button } from 'react-bootstrap';
 import '../../css/About.css';
 
 export default class About extends Component {
@@ -9,22 +9,27 @@ export default class About extends Component {
                 <Grid>
                     <Row>
                         <Col xs={12} sm={8} smOffset={2}>
-                            <div className="feature-block">
-                                <p>Hi</p>
-                            </div>
+                            <Jumbotron>
+                              <h1>About Page</h1>
+                              <p>
+                                This is a simple hero unit, a simple jumbotron-style component for calling
+                                extra attention to featured content or information.
+                              </p>
+                              <p>
+                                <Button bsStyle="primary">Learn more</Button>
+                              </p>
+                            </Jumbotron>
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={12} sm={8} smOffset={2}>
-                            <Image src="assets/food2.jpg" className="about-profile-pic" rounded />
-                            <h3>Yum food</h3>
-                            <p>We have no limits to our world. We're only limited by our imagination. Everybody needs a friend. Here's something that's fun. You have to make those little noises or it won't work. This is the way you take out your flustrations. If you overwork it you become a cloud killer. There's nothing worse than a cloud killer.</p>
-                            <p>This is probably the greatest thing to happen in my life - to be able to share this with you. Don't forget to tell these special people in your life just how special they are to you. Put your feelings into it, your heart, it's your world. Learn when to stop. Now we can begin working on lots of happy little things.</p>
-                            <p>It's important to me that you're happy. With something so strong, a little bit can go a long way. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown.</p>
-                            <p>But they're very easily killed. Clouds are delicate. That's what painting is all about. It should make you feel good when you paint. You're the greatest thing that has ever been or ever will be. You're special. You're so very special. Tree trunks grow however makes them happy.</p>
-                            <p>We wash our brush with odorless thinner. I'm gonna start with a little Alizarin crimson and a touch of Prussian blue Be so very light. Be a gentle whisper.</p>
-                            <p>Just go out and talk to a tree. Make friends with it. You don't want to kill all your dark areas they are very important. Remember how free clouds are. They just lay around in the sky all day long.</p>
-                            <p>Get away from those little Christmas tree things we used to make in school. I think there's an artist hidden in the bottom of every single one of us. But we're not there yet, so we don't need to worry about it.</p>
+                            <p>Paint anything you want on the canvas. Create your own world. Let your heart be your guide. These little son of a guns hide in your brush and you just have to push them out. There is immense joy in just watching - watching all the little creatures in nature.</p>
+                            <p>I really recommend you use odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself. There comes a nice little fluffer. We need dark in order to show light. We don't have to be committed. We are just playing here. Now, we're going to fluff this cloud. Let's put some happy little clouds in our world.</p>
+                            <p>Let's have a little bit of fun today. Let all these things just sort of happen. It's life. It's interesting. It's fun.</p>
+                            <p>How to paint. That's easy. What to paint. That's much harder. Use absolutely no pressure. Just like an angel's wing. Use what you see, don't plan it. You have freedom here. The only guide is your heart. You can create anything that makes you happy. A tree needs to be your friend if you're going to paint him.</p>
+                            <p>The shadows are just like the highlights, but we're going in the opposite direction. Don't fiddle with it all day. Don't hurry. Take your time and enjoy. Learn when to stop. Let's have a nice tree right here. Just beat the devil out of it.</p>
+                            <p>Work that paint. Trees live in your fan brush, but you have to scare them out. Let all these little things happen. Don't fight them. Learn to use them. Now we can begin working on lots of happy little things.</p>
+                            <p>I'm going to mix up a little color. We’ll use Van Dyke Brown, Permanent Red, and a little bit of Prussian Blue. Let's get crazy. Talent is a pursued interest. That is to say, anything you practice you can do. See. We take the corner of the brush and let it play back-and-forth. All kinds of happy little splashes.</p>
                         </Col>
                     </Row>
                 </Grid>

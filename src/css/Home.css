@@ -1,53 +1,28 @@
-.feature-panel {
-    background-color: #616161;
-    margin: 0;
-    width:100%;
-    padding: 40px;
+.carousel-caption {
+    left: 5%;
+    right: 50%;
+    margin-left: 0;
+    padding: 10px;
+    top: 10%;
+    bottom: 80%;
 }
 
-.text-container {
-    max-width: 40rem;
-    margin: auto;
-    text-shadow: 1px 1px 1px black;
+.carousel-indicators {
+    top: 10%;
+    bottom: 80%;
+    left: 18%;
 }
 
-.feature-panel h1, h2 {
-    color: #EEE;
+.banner {
+    background-color: black;
+    max-height: 900px;
 }
 
-.feature-panel p {
-    color: #EEE;
+.banner-img {
+    min-height: 768px;
+    opacity: 0.85;
 }
 
-
-.panel-left {
-    background-color: #34515f;
-    background-image: radial-gradient(#8eacbc, #34515f);
-    min-height: 700px;
-}
-
-.panel-right {
-    background-color: #82ada9;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./cssimages/BannerImages/BannerCatMonty.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 700px;
-}
-
-.caption {
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-}
-
-.carousel-image {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./cssimages/BannerImages/BannerCorgi.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.panel-right-image {
-    height: 450px;
-    margin: 0px;
+.caption-text {
+    text-shadow: 3px 3px 4px #222;
 }
