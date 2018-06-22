@@ -6,7 +6,7 @@ import '../../css/CustomNavbar.css';
 export default class CustomNavbar extends Component {
     render() {
         return (
-            <Navbar default collapseOnSelect staticTop>
+            <Navbar default collapseOnSelect fixedBottom>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <Link to="/">OTB!</Link>
@@ -15,6 +15,9 @@ export default class CustomNavbar extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav pullRight>
+                        <NavItem eventKey={1} componentClass={Link} href="/" to="/">
+                            Home
+                        </NavItem>
                         <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
                             About
                         </NavItem>

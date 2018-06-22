@@ -8,16 +8,15 @@ class Home extends Component {
     render() {
         console.log(this.props.item);
         return (
-            <div>
+            <div className="borderOn">
                 <Grid fluid>
                     <Row className="show-grid text-center no-border">
-                        <Col xs={12} className="feature-panel">
-                            <div class="text-container">
-                                <h1>Only the Best Pet Food!</h1>
-                                <h2>Find the best food at the best prices</h2>
-                                <p>You can't have light without dark. You can't know happiness unless you've known sorrow. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. Automatically, all of these beautiful, beautiful things will happen. Trees live in your fan brush, but you have to scare them out.</p>                                
+                        <Col xs={12} className="person-wrapper jumbotron">
+                            <div>
+                                <h2>Only the Best Pet Food!</h2>
+                                <p>Find the best food at the best prices</p>
                                 <Link to="/about">
-                                    <Button bsStyle="btn secondary">Find Food</Button>
+                                    <Button bsStyle="primary">Find Food</Button>
                                 </Link>
                             </div>
                         </Col>

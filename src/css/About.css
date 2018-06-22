@@ -8,3 +8,12 @@
     float: left;
     margin: 0 1em 1em 0;
 }
+
+.borderOn {
+    border: 2px red;
+    border-style: solid;
+}
+
+.feature-block {
+    height: 300px;
+}
