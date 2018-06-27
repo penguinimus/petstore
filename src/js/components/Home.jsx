@@ -9,7 +9,7 @@ class Home extends Component {
         return (
                 <Grid fluid>
                     <Row className="text-left">
-                            <Carousel controls={false} className="hidden-xs">
+                            <Carousel controls={false} interval={3500} className="hidden-xs">
                                 <Carousel.Item className="banner">
                                         <Carousel.Caption className="caption-text">
                                             <h1>Only the Best</h1>
