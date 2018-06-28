@@ -29,6 +29,13 @@ class Home extends Component {
                                         </Carousel.Caption>
                                     <Image alt="Monty" src='./assets/BannerCatMonty.jpg' className="banner-img"  responsive />
                                 </Carousel.Item>
+                                <Carousel.Item className="banner">
+                                        <Carousel.Caption className="caption-text">
+                                            <h3>Here's a pug</h3>
+                                            <p>This is for my Lisa</p>
+                                        </Carousel.Caption>
+                                    <Image alt="Pug" src='./assets/BannerPug.jpg' className="banner-img"  responsive />
+                                </Carousel.Item>
                             </Carousel>
                             <div className="hidden-sm hidden-md hidden-lg">
                                 <Image alt="BannerSmallScreen" src="./assets/BannerWomanKittenXS.jpg" responsive />

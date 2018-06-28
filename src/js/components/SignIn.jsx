@@ -43,6 +43,7 @@ export default class SignIn extends Component {
         return (
             <Grid>
                     <Form horizontal>
+                      <h1 className="text-center">Sign In</h1>
                       <FormGroup controlId="formHorizontalEmail" validationState={this.state.emailvalidation}>
                         <Col componentClass={ControlLabel} xs={3}>
                           Email
