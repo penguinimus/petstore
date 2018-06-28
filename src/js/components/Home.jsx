@@ -12,7 +12,7 @@ class Home extends Component {
                             <Carousel controls={false} interval={3500} className="hidden-xs">
                                 <Carousel.Item className="banner">
                                         <Carousel.Caption className="caption-text">
-                                            <h1>Only the Best</h1>
+                                            <h1>Oliver's Picks</h1>
                                             <h1>Pet Supplies</h1>
                                             <h2>Find the best supplies at the best prices</h2>
                                             <p>You can't have light without dark. You can't know happiness unless you've known sorrow. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. Automatically, all of these beautiful, beautiful things will happen. Trees live in your fan brush, but you have to scare them out.</p>                                
@@ -24,10 +24,10 @@ class Home extends Component {
                                 </Carousel.Item>
                                 <Carousel.Item className="banner">
                                         <Carousel.Caption className="caption-text">
-                                            <h3>Introducing Monty</h3>
-                                            <p>Monty is your personal feline assistant, here to help you shop!</p>
+                                            <h3>Introducing Oliver!</h3>
+                                            <p>Oliver is your personal feline assistant, here to help you shop!</p>
                                         </Carousel.Caption>
-                                    <Image alt="Monty" src='./assets/BannerCatMonty.jpg' className="banner-img"  responsive />
+                                    <Image alt="Oliver" src='./assets/BannerCatOliver.jpg' className="banner-img"  responsive />
                                 </Carousel.Item>
                                 <Carousel.Item className="banner">
                                         <Carousel.Caption className="caption-text">
