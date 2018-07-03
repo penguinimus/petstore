@@ -1,0 +1,12 @@
+/* Note to grab colors from this site:
+
+https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=607D8B
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}

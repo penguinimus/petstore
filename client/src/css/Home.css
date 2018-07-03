@@ -1,0 +1,28 @@
+.carousel-caption {
+    left: 5%;
+    right: 50%;
+    margin-left: 0;
+    padding: 10px;
+    top: 10%;
+    bottom: 80%;
+}
+
+.carousel-indicators {
+    top: 10%;
+    bottom: 80%;
+    left: 18%;
+}
+
+.banner {
+    background-color: black;
+    max-height: 900px;
+}
+
+.banner-img {
+    min-height: 768px;
+    opacity: 0.85;
+}
+
+.caption-text {
+    text-shadow: 3px 3px 4px #222;
+}
