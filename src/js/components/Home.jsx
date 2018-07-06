@@ -8,7 +8,7 @@ class Home extends Component {
     render() {
         return (
                 <Grid fluid>
-                    <Row className="text-left">
+                    <Row className="text-center">
                             <Carousel controls={false} interval={3500} className="hidden-xs">
                                 <Carousel.Item className="banner">
                                         <Carousel.Caption className="caption-text">
