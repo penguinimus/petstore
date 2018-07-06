@@ -1,0 +1,11 @@
+.footerbottom {
+    border: solid lightgray;
+    border-width: 1px 0px;
+    padding: 5px;
+}
+
+.footerbottom li {
+    display: inline;
+    padding: 10px;
+    font-size: 2em;
+}

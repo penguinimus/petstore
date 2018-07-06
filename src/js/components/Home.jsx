@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Grid, Row, Col, Image, Button, Jumbotron, Carousel } from 'react-bootstrap';
 import '../../css/Home.css';
+import 'bootstrap-social';
 
 class Home extends Component {
     render() {
@@ -60,7 +61,44 @@ class Home extends Component {
                             <p>We wash our brush with odorless thinner. I'm gonna start with a little Alizarin crimson and a touch of Prussian blue Be so very light. Be a gentle whisper.</p>
                             <p>Just go out and talk to a tree. Make friends with it. You don't want to kill all your dark areas they are very important. Remember how free clouds are. They just lay around in the sky all day long.</p>
                             <p>Get away from those little Christmas tree things we used to make in school. I think there's an artist hidden in the bottom of every single one of us. But we're not there yet, so we don't need to worry about it.</p>
-                            <Image src="assets/food2.jpg" className="about-profile-pic" rounded responsive />
+                        </Col>
+                    </Row>
+                    <Row className="homefooter text-center">
+                        <Col xs={12} sm={4}>
+                            <ul>
+                                <li>
+                                    <Link to="/about">
+                                        Account
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">
+                                        About
+                                    </Link>
+                                </li>
+                            </ul>
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <p></p>
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <ul>
+                                <li>
+                                    <a href="http://www.facebook.com" className="btn btn-social-icon btn-facebook">
+                                        FB
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.instagram.com" className="btn btn-social-icon btn-instagram">
+                                        IN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitter.com" className="btn btn-social-icon btn-twitter">
+                                        TW
+                                    </a>
+                                </li>
+                            </ul>
                         </Col>
                     </Row>
                 </Grid>

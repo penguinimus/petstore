@@ -26,3 +26,15 @@
 .caption-text {
     text-shadow: 3px 3px 4px #222;
 }
+
+.homefooter {
+    border: solid lightgray;
+    border-width: 1px 0px;
+    padding: 10px;
+}
+
+.homefooter  li {
+    display: inline;
+    padding: 10px;
+    font-size: 1.5em;
+}
