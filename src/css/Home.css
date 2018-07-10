@@ -27,6 +27,19 @@
     text-shadow: 3px 3px 4px #222;
 }
 
+.socialfooter {
+    background-color: #8f8f8f;
+    color: #fff;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.socialfooter  li {
+    display: inline;
+    padding: 5px;
+}
+
 .homefooter {
     border: solid lightgray;
     border-width: 1px 0px;
@@ -34,7 +47,10 @@
 }
 
 .homefooter  li {
-    display: inline;
-    padding: 10px;
-    font-size: 1.5em;
+    list-style-type: none;
 }
+
+.footer-heading {
+    font-size: 1.25em;
+}
+

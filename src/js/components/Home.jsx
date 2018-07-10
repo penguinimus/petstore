@@ -63,26 +63,15 @@ class Home extends Component {
                             <p>Get away from those little Christmas tree things we used to make in school. I think there's an artist hidden in the bottom of every single one of us. But we're not there yet, so we don't need to worry about it.</p>
                         </Col>
                     </Row>
-                    <Row className="homefooter text-center">
-                        <Col xs={12} sm={4}>
-                            <ul>
-                                <li>
-                                    <Link to="/about">
-                                        Account
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">
-                                        About
-                                    </Link>
-                                </li>
-                            </ul>
+                    <Row className="socialfooter text-center">
+                        <Col xs={12} sm={3}>
                         </Col>
-                        <Col xs={12} sm={4}>
-                            <p></p>
+                        <Col xs={12} sm={3}>
+                            <p>Chat with Oliver</p>
                         </Col>
-                        <Col xs={12} sm={4}>
+                        <Col xs={12} sm={3}>
                             <ul>
+                                <li>Follow Us!</li>
                                 <li>
                                     <a href="http://www.facebook.com" className="btn btn-social-icon btn-facebook">
                                         FB
@@ -97,6 +86,71 @@ class Home extends Component {
                                     <a href="http://www.twitter.com" className="btn btn-social-icon btn-twitter">
                                         TW
                                     </a>
+                                </li>
+                            </ul>
+                        </Col>
+                        <Col xs={12} sm={3}>
+                            <p></p>
+                        </Col>
+                    </Row>
+                    <Row className="homefooter text-center">
+                        <Col xs={12} sm={3}>
+                            <ul>
+                                <li className="footer-heading">Navigation</li>
+                                <li>
+                                    <Link to="/about">
+                                        Account
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">
+                                        About
+                                    </Link>
+                                </li>
+                            </ul>
+                        </Col>
+                        <Col xs={12} sm={3}>
+                            <ul>
+                                <li className="footer-heading">Site Map</li>
+                                <li>
+                                    <Link to="/about">
+                                        Account
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">
+                                        About
+                                    </Link>
+                                </li>
+                            </ul>
+                        </Col>
+                        <Col xs={12} sm={3}>
+                            <ul>
+                                <li className="footer-heading">Things</li>
+                                <li>
+                                    <Link to="/about">
+                                        Account
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">
+                                        About
+                                    </Link>
+                                </li>
+                            </ul>
+                        </Col>
+                        <Col xs={12} sm={3}>
+                            <ul>
+                                <li className="footer-heading">Stuff</li>
+                                <li>
+                                    <Link to="/about">
+                                        Account
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">
+                                        About
+                                    </Link>
                                 </li>
                             </ul>
                         </Col>
