@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { Grid, Row, Col, Image, Jumbotron, Button } from 'react-bootstrap';
 import '../../css/News.css';
 
+import Footer from './Footer.jsx';
+
 export default class News extends Component {
     render() {
         return (
-                <Grid>
+                <Grid fluid>
+                    <Row className="show-grid">
                     <Jumbotron>
                       <h1>News Page</h1>
                       <p>
@@ -16,7 +19,8 @@ export default class News extends Component {
                         <Button bsStyle="primary">Learn more</Button>
                       </p>
                     </Jumbotron>
-                    <Row>
+                    </Row>
+                    <Row className="show-grid">
                         <Col xs={12} sm={8} className="main-section">
                             <p>All you need to paint is a few tools, a little instruction, and a vision in your mind. The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. Let's make some happy little clouds in our world. I can't think of anything more rewarding than being able to express yourself to others through painting. There isn't a rule. You just practice and find out which way works best for you.</p>
                             <p>Work that paint. If what you're doing doesn't make you happy - you're doing the wrong thing. Even the worst thing we can do here is good.</p>
@@ -29,6 +33,7 @@ export default class News extends Component {
                             <p>You can spend all day playing with mountains. This is a happy place, little squirrels live here and play. There is immense joy in just watching - watching all the little creatures in nature.</p>
                         </Col>
                     </Row>
+                    <Footer />
                 </Grid>
         );
     }

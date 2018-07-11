@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { Row, Grid, Col, Jumbotron, Button } from 'react-bootstrap';
 import '../../css/About.css';
 
+import Footer from './Footer.jsx';
+
 export default class About extends Component {
     render() {
         return (
-            <div>
-                <Grid>
-                    <Row>
+                <Grid fluid>
+                    <Row className="show-grid">
                         <Col xs={12} sm={8} smOffset={2}>
                             <Jumbotron>
                               <h1>About Page</h1>
@@ -21,7 +22,7 @@ export default class About extends Component {
                             </Jumbotron>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="show-grid">
                         <Col xs={12} sm={8} smOffset={2}>
                             <p>Paint anything you want on the canvas. Create your own world. Let your heart be your guide. These little son of a guns hide in your brush and you just have to push them out. There is immense joy in just watching - watching all the little creatures in nature.</p>
                             <p>I really recommend you use odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself. There comes a nice little fluffer. We need dark in order to show light. We don't have to be committed. We are just playing here. Now, we're going to fluff this cloud. Let's put some happy little clouds in our world.</p>
@@ -32,8 +33,8 @@ export default class About extends Component {
                             <p>I'm going to mix up a little color. We’ll use Van Dyke Brown, Permanent Red, and a little bit of Prussian Blue. Let's get crazy. Talent is a pursued interest. That is to say, anything you practice you can do. See. We take the corner of the brush and let it play back-and-forth. All kinds of happy little splashes.</p>
                         </Col>
                     </Row>
+                    <Footer />
                 </Grid>
-            </div>
         );
     }
 }

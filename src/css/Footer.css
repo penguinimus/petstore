@@ -1,11 +1,19 @@
-.footerbottom {
-    border: solid lightgray;
-    border-width: 1px 0px;
+.socialfooter {
+    background-color: #8f8f8f;
+    color: #fff;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.socialfooter  li {
+    display: inline;
     padding: 5px;
 }
 
-.footerbottom li {
-    display: inline;
+.homefooter {
+    border: solid lightgray;
+    border-bottom: none;
+    border-width: 1px 0px;
     padding: 10px;
-    font-size: 2em;
 }

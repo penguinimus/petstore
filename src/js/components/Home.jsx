@@ -5,6 +5,8 @@ import { Grid, Row, Col, Image, Button, Jumbotron, Carousel } from 'react-bootst
 import '../../css/Home.css';
 import 'bootstrap-social';
 
+import Footer from './Footer.jsx';
+
 class Home extends Component {
     render() {
         return (
@@ -41,7 +43,7 @@ class Home extends Component {
                             <div className="hidden-sm hidden-md hidden-lg">
                                 <Image alt="BannerSmallScreen" src="./assets/BannerWomanKittenXS.jpg" responsive />
                                 <Jumbotron>
-                                    <h1>Only the Best</h1>
+                                    <h1>Oliver's Picks</h1>
                                     <h1>Pet Supplies</h1>
                                     <h2>Find the best supplies at the best prices</h2>
                                     <p>You can't have light without dark. You can't know happiness unless you've known sorrow. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. Automatically, all of these beautiful, beautiful things will happen. Trees live in your fan brush, but you have to scare them out.</p>                                
@@ -63,97 +65,8 @@ class Home extends Component {
                             <p>Get away from those little Christmas tree things we used to make in school. I think there's an artist hidden in the bottom of every single one of us. But we're not there yet, so we don't need to worry about it.</p>
                         </Col>
                     </Row>
-                    <Row className="socialfooter text-center">
-                        <Col xs={12} sm={3}>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <p>Chat with Oliver</p>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <ul>
-                                <li>Follow Us!</li>
-                                <li>
-                                    <a href="http://www.facebook.com" className="btn btn-social-icon btn-facebook">
-                                        FB
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.instagram.com" className="btn btn-social-icon btn-instagram">
-                                        IN
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.twitter.com" className="btn btn-social-icon btn-twitter">
-                                        TW
-                                    </a>
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <p></p>
-                        </Col>
-                    </Row>
-                    <Row className="homefooter text-center">
-                        <Col xs={12} sm={3}>
-                            <ul>
-                                <li className="footer-heading">Navigation</li>
-                                <li>
-                                    <Link to="/about">
-                                        Account
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">
-                                        About
-                                    </Link>
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <ul>
-                                <li className="footer-heading">Site Map</li>
-                                <li>
-                                    <Link to="/about">
-                                        Account
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">
-                                        About
-                                    </Link>
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <ul>
-                                <li className="footer-heading">Things</li>
-                                <li>
-                                    <Link to="/about">
-                                        Account
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">
-                                        About
-                                    </Link>
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <ul>
-                                <li className="footer-heading">Stuff</li>
-                                <li>
-                                    <Link to="/about">
-                                        Account
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/about">
-                                        About
-                                    </Link>
-                                </li>
-                            </ul>
-                        </Col>
+                    <Row>
+                        <Footer />
                     </Row>
                 </Grid>
         );
