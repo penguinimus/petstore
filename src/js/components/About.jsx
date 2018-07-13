@@ -5,6 +5,15 @@ import '../../css/About.css';
 import Footer from './Footer.jsx';
 
 export default class About extends Component {
+    componentWillMount() {
+        console.log("Application loading: About");
+      }
+      
+    componentDidMount() {
+        console.log("Application loaded: About");
+    }
+    
+    
     render() {
         return (
                 <Grid fluid>

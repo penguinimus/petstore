@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom';
 import '../../css/Footer.css';
 
 export default class Footer extends Component {
+    componentWillMount() {
+        console.log("Application loading: Footer");
+      }
+      
+    componentDidMount() {
+        console.log("Application loaded: Footer");
+    }
+    
     render() {
         return (
             <div>

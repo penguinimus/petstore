@@ -5,6 +5,14 @@ import '../../css/News.css';
 import Footer from './Footer.jsx';
 
 export default class News extends Component {
+    componentWillMount() {
+        console.log("Application loading: News");
+      }
+      
+    componentDidMount() {
+        console.log("Application loaded: News");
+    }
+    
     render() {
         return (
                 <Grid fluid>

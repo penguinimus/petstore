@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom';
 import '../../css/CustomNavbar.css';
 
 export default class CustomNavbar extends Component {
+    componentWillMount() {
+        console.log("Application loading: Navbar");
+      }
+      
+    componentDidMount() {
+        console.log("Application loaded: Navbar");
+    }
+    
     render() {
         return (
             <Navbar default collapseOnSelect staticTop>

@@ -8,6 +8,14 @@ import 'bootstrap-social';
 import Footer from './Footer.jsx';
 
 class Home extends Component {
+    componentWillMount() {
+        console.log("Application loading: Home");
+      }
+      
+    componentDidMount() {
+        console.log("Application loaded: Home");
+    }
+    
     render() {
         return (
                 <Grid fluid>
