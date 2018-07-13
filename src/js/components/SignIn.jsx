@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import { Grid, Col, Button, ControlLabel, Form, FormGroup, FormControl, Checkbox } from 'react-bootstrap';
 import '../../css/SignIn.css';
+import axios from 'axios';
 
 export default class SignIn extends Component {
     constructor(props, context) {
         super(props, context);
         this.handleEmailChange = this.handleEmailChange.bind(this);
         this.handlePasswordChange = this.handlePasswordChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
           emailtext: '',
-          emailvalidation: '',
-          passvalidation: '',
+          passwordtext: '',
+          emailvalidation: null,
+          passvalidation: null,
           error: '',
-          statusbar: 'showstatus'
+          statusbar: 'showstatus',
+          login: false
         };
     }
-    
+
     // e is short for event
     handleEmailChange(e) {
-        this.setState({ emailval: e.target.value });
+        this.setState({ emailtext: e.target.value });
         if ( e.target.value === '') {
           this.setState({ emailvalidation: ''});
         } else if ( e.target.value.includes('@')) {
@@ -26,10 +30,11 @@ export default class SignIn extends Component {
         } else {
           this.setState({ emailvalidation: 'error'});
         }
-    }
-    
+      }
+
+
     handlePasswordChange(e) {
-      if (e.target.value.length === 0 ) { 
+      if (e.target.value.length === 0 ) {
         this.setState({ passvalidation: ''});
       } else if (e.target.value.length < 6 ) {
         this.setState({ passvalidation: 'warning' });
@@ -37,9 +42,28 @@ export default class SignIn extends Component {
         this.setState({ passvalidation: 'success'});
       }
     }
-    
+
+    handleSubmit(e) {
+      const API_URL = 'http://localhost:3001/api';
+      const payload = {
+        "email": this.state.emailtext,
+        "password": this.state.passwordtext
+      }
+      axios.post(`${API_URL}/login`, payload)
+      .then((response) => {
+         console.log(response);
+         if(response.data.code === 200) {
+           console.log('login successful');
+         } else if (response.data.code === 204) {
+           console.log('Username and password don\'t match');
+         } else {
+           console.log('Username doesn\'t exist');
+         }
+       });
+     }
+
     render() {
-      console.log(this.state.emailval);
+      console.log(this.state.emailtext);
         return (
             <Grid>
                     <Form horizontal>
@@ -49,11 +73,11 @@ export default class SignIn extends Component {
                           Email
                         </Col>
                         <Col sm={6}>
-                          <FormControl type="email" placeholder="Email" value={this.state.emailval} onChange={this.handleEmailChange} />
+                          <FormControl type="email" placeholder="Email" value={this.state.emailtext} onChange={this.handleEmailChange} />
                           <FormControl.Feedback />
                         </Col>
                       </FormGroup>
-                    
+
                       <FormGroup controlId="formHorizontalPassword" validationState={this.state.passvalidation}>
                         <Col componentClass={ControlLabel} xs={3}>
                           Password
@@ -63,19 +87,19 @@ export default class SignIn extends Component {
                           <FormControl.Feedback />
                         </Col>
                       </FormGroup>
-                    
+
                       <FormGroup>
                         <Col smOffset={3} xs={10}>
                           <Checkbox>Remember me</Checkbox>
                         </Col>
                       </FormGroup>
-                    
+
                       <FormGroup>
                         <Col smOffset={3} xs={10}>
-                          <Button type="submit">Sign in</Button>
+                          <Button type="submit" onClick={this.handleSubmit}>Sign in</Button>
                         </Col>
                       </FormGroup>
-                    </Form>     
+                    </Form>
             </Grid>
         );
     }
