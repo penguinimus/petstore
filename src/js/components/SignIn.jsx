@@ -16,7 +16,8 @@ export default class SignIn extends Component {
           passvalidation: null,
           error: '',
           statusbar: 'showstatus',
-          login: false
+          login: false,
+          loginname: ''
         };
     }
 
@@ -44,7 +45,8 @@ export default class SignIn extends Component {
     }
 
     handleSubmit(e) {
-      const API_URL = 'http://localhost:3001/api';
+      console.log('trying...');
+      const API_URL = 'http://petstore-penguinimus.c9users.io:8081/api';
       const payload = {
         "email": this.state.emailtext,
         "password": this.state.passwordtext
@@ -60,13 +62,15 @@ export default class SignIn extends Component {
            console.log('Username doesn\'t exist');
          }
        });
+       e.preventDefault();
+       console.log('Did or didn\'t do the thing...');
      }
 
     render() {
-      console.log(this.state.emailtext);
+      console.log(`Login: ${this.state.login}`);
         return (
             <Grid>
-                    <Form horizontal>
+                    <Form horizontal onSubmit={this.handleSubmit}>
                       <h1 className="text-center">Sign In</h1>
                       <FormGroup controlId="formHorizontalEmail" validationState={this.state.emailvalidation}>
                         <Col componentClass={ControlLabel} xs={3}>
@@ -96,7 +100,7 @@ export default class SignIn extends Component {
 
                       <FormGroup>
                         <Col smOffset={3} xs={10}>
-                          <Button type="submit" onClick={this.handleSubmit}>Sign in</Button>
+                          <Button type="submit" value="Submit">Sign in</Button>
                         </Col>
                       </FormGroup>
                     </Form>

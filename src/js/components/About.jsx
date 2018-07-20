@@ -10,7 +10,7 @@ export default class About extends Component {
       }
       
     componentDidMount() {
-        console.log("Application loaded: About");
+        // console.log("Application loaded: About");
     }
     
     

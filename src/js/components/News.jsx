@@ -10,7 +10,7 @@ export default class News extends Component {
       }
       
     componentDidMount() {
-        console.log("Application loaded: News");
+        // console.log("Application loaded: News");
     }
     
     render() {

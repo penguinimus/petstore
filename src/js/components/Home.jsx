@@ -13,7 +13,7 @@ class Home extends Component {
       }
       
     componentDidMount() {
-        console.log("Application loaded: Home");
+        // console.log("Application loaded: Home");
     }
     
     render() {

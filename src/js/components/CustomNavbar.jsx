@@ -5,7 +5,7 @@ import '../../css/CustomNavbar.css';
 
 export default class CustomNavbar extends Component {
     componentWillMount() {
-        console.log("Application loading: Navbar");
+        // console.log("Application loading: Navbar");
       }
       
     componentDidMount() {
